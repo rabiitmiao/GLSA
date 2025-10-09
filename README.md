@@ -48,3 +48,22 @@ To train and evaluate GLSA, you need to download the [VOC-LT](https://github.com
     ├── voc_test.data
     ├── voc_train.data
 ```
+## 🚀 Experiments  
+  
+To train the GLSA on the VOC dataset (with 2*GPUs):
+```
+$ bash tools/dist_train.sh configs/glsa/glsa_conf.py 2
+```
+
+To test the GLSA on the VOC dataset:  
+```
+$ python tools/test_glsa.py configs/glsa/glsa_conf.py <checkpoint_path> --metrics mAP
+```
+## 💌 Acknowledgement  
+This repo is developed based on [MMPreTrain](https://github.com/open-mmlab/mmpretrain) and [GKGNet](https://github.com/jin-s13/GKGNet).  
+
+## 📌 Citation
+
+```
+coming soon.
+```
